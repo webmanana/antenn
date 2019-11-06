@@ -6,7 +6,7 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Мир Антенн</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/foundation/css/foundation.css">
 	<link rel="stylesheet" href="vendor/foundation/css/app.css">
 	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
@@ -53,16 +53,43 @@
 							</div>
 							<div class="top_mobile_content">
 								<div class="header_log">
-									<a href="#" class="header_login red">
+									<a href="#" class="header_login red" data-toggle="header_join">
 										<div class="header_login_img">
 											<img src="img/login.png" alt="">
 										</div>
 										<span>Вход</span>
 									</a>
 									<span>|</span>
-									<a href="#" class="header_reg red">
+									<a href="#" class="header_reg red" data-toggle="header_reg">
 										<span>Регистрация</span>
 									</a>
+								</div>
+								<div class="dropdown-pane header_login_inner" id="header_join" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<div class="header_login_content">
+										<span>Авторизация</span>
+										<div class="header_login_input">
+											<input type="text" name="" value="" placeholder="Номер телефона">
+											<input type="password" name="" value="" placeholder="Пароль">
+											<input type="submit" name="" value="Войти">
+											<p>Еще нет аккаунта? <a href="#">Зарегистрируйтесь</a></p>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown-pane header_login_inner" id="header_reg" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<div class="header_login_content">
+										<span>Регистрация</span>
+										<div class="header_login_input">
+											<input type="text" name="" value="" placeholder="Фамилия">
+											<input type="text" name="" value="" placeholder="Имя">
+											<input type="text" name="" value="" placeholder="Отчество">
+											<input type="text" name="" value="" placeholder="Номер телефона">
+											<input type="text" name="" value="" placeholder="E-mail">
+											<input type="password" name="" value="" placeholder="Пароль">
+											<input type="password" name="" value="" placeholder="Повторите пароль">
+											<input type="submit" name="" value="Регистрация">
+											<p>Уже есть аккаунт? <a href="#">Авторизуйтесь</a></p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -198,7 +225,7 @@
 										</ul>
 									</div>
 								</div>
-								<a href="#">Весь каталог <img class="margin_right_img" src="img/right_arrow.png" alt=""></a>
+								<a href="#" class="header_catalog_menu_main">Весь каталог <img class="margin_right_img" src="img/right_arrow.png" alt=""></a>
 							</div>
 							<div class="dropdown-pane" id="header_catalog_menu_2" data-dropdown data-dropdown data-hover-pane="true" data-close-on-click="true">
 								<ul class="header_catalog_menu_panel vertical dropdown menu" data-dropdown-menu >
@@ -388,7 +415,7 @@
 			<section id="slide">
 				<div class="main_slide">
 					<div class="slider_inner slick-initialized">
-						<a href="#" class="slider_arrow arrow_left"><img src="img/slider_arrow_left.png" alt=""></a>
+						<a href="#" id="arrow_left_1" class="slider_arrow arrow_left"><img src="img/slider_arrow_left.png" alt=""></a>
 						<div class="slider_content">
 							<div class="slide">
 								<img src="img/slider_1.jpg" alt="">
@@ -431,7 +458,7 @@
 								</div>
 							</div>
 						</div>
-						<a href="#" class="slider_arrow arrow_right"><img src="img/slider_arrow_right.png" alt=""></a>
+						<a href="#" id="arrow_right_1" class="slider_arrow arrow_right"><img src="img/slider_arrow_right.png" alt=""></a>
 					</div>
 				</div>
 			</section>
@@ -501,130 +528,357 @@
 			</section>
 			<section class="service">
 				<div class="container">
-					<div class="service_inner">
-						<div class="section_title">
-							<h2>Услуги</h2>
+					<div class="section_title">
+						<h2>Популярные товары</h2>
+						<div class="title_line"></div>
+						<a href="#">Все популярные товары</a>
+					</div>
+				</div>
+				<div class="popular_tovar_inner">
+					<a href="#" id="arrow_left_2" class="slider_arrow_2 arrow_left"><img src="img/slider_arrow_left.png" alt=""></a>
+					<div class="popular_tovar_content">
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_meta_inner">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
 						</div>
-						<div class="service_content">
-							<div class="service_block">
-								<div class="service_img">
-									<img src="img/service_1.jpg" alt="">
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_meta_inner">
+									<span>-20%</span>
 								</div>
-								<h3>Окна и двери</h3>
-								<ul>
-									<li><a href="#">Изготовление окон и дверей</a></li>
-									<li><a href="#">Установка окон и дверей</a></li>
-									<li><a href="#">Установка откосов и подоконников</a></li>
-									<li><a href="#">Установка сеток</a></li>
-								</ul>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
 							</div>
-							<div class="service_block">
-								<div class="service_img">
-									<img src="img/service_2.jpg" alt="">
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_meta_inner">
+									<span>-20%</span>
 								</div>
-								<h3>Перегородки</h3>
-								<ul>
-									<li><a href="#">Изготовление перегородок</a></li>
-									<li><a href="#">Установка перегородок</a></li>
-									<li><a href="#">Лоджия и балконы</a></li>
-								</ul>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
 							</div>
-							<div class="service_block">
-								<div class="service_img">
-									<img src="img/service_3.jpg" alt="">
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_meta_inner">
+									<span>-20%</span>
 								</div>
-								<h3>Ремонт</h3>
-								<ul>
-									<li><a href="#">Замена стеклопакета</a></li>
-									<li><a href="#">Замена резинок</a></li>
-									<li><a href="#">Регулировка изделий из ПВХ</a></li>
-									<li><a href="#">Перепенка изделий из ПВХ</a></li>
-								</ul>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_meta_inner">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_meta_inner">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_meta_inner">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+						<div class="popular_tovar_block">
+							<div class="catalog_element_content">
+								<div class="catalog_element_meta_inner">
+									<span>-20%</span>
+								</div>
+								<a href="#" class="catalog_element_img">
+									<img src="img/tovar_1.png" alt="">
+								</a>
+								<a href="#" class="catalog_element_cat">Приемники</a>
+								<a href="#"><h5>Цифровой эфирный приемник Denn DDT111</h5></a>
+								<div class="catalog_element_price_inner">
+									<span class="catalog_element_price">1 499 ₽</span>
+									<span class="catalog_element_price_not">1 899 ₽</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" id="arrow_right_2" class="slider_arrow_2 arrow_right"><img src="img/slider_arrow_right.png" alt=""></a>
+				</div>
+			</section>
+			<section class="banner">
+				<img src="img/banner.png" alt="">
+			</section>
+			<section class="news">
+				<div class="container">
+					<div class="section_title">
+						<h2>Новости</h2>
+						<div class="title_line"></div>
+						<a href="#">Все новости</a>
+					</div>
+					<div class="news_inner">
+						<div class="news_block">
+							<div class="news_block_content">
+								<a href="#"><h3>Почему продукция «РЭМО» «Made in Russia»?</h3></a>
+								<div class="news_block_desc">
+									<p>Ведущий производитель эфирных антенн в России, и, заметим, один из крупнейших в Европе, получил официальное право маркировать свою продукцию специальным знаком «Made in Russia» («Сделано в России»).</p>
+									<span>2 мая, 2019 - 12:19</span>
+								</div>
+							</div>
+						</div>
+						<div class="news_block">
+							<div class="news_block_content">
+								<a href="#"><h3>Почему продукция «РЭМО» «Made in Russia»?</h3></a>
+								<div class="news_block_desc">
+									<p>Ведущий производитель эфирных антенн в России, и, заметим, один из крупнейших в Европе, получил официальное право маркировать свою продукцию специальным знаком «Made in Russia» («Сделано в России»).</p>
+									<span>2 мая, 2019 - 12:19</span>
+								</div>
+							</div>
+						</div>
+						<div class="news_block">
+							<div class="news_block_content">
+								<a href="#"><h3>Почему продукция «РЭМО» «Made in Russia»?</h3></a>
+								<div class="news_block_desc">
+									<p>Ведущий производитель эфирных антенн в России, и, заметим, один из крупнейших в Европе, получил официальное право маркировать свою продукцию специальным знаком «Made in Russia» («Сделано в России»).</p>
+									<span>2 мая, 2019 - 12:19</span>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<footer class="footer_wrap">
+			<section class="shop">
 				<div class="container">
-					<div class="footer_inner">
-						<div class="footer_block">
-							<span class="footer_title">Каталог товаров</span>
-							<ul>
-								<li><a href="#">Окна из ПВХ</a></li>
-								<li><a href="#">Двери из ПВХ</a></li>
-								<li><a href="#">Алюминиевый профиль</a></li>
-								<li><a href="#">Пластиковые откосы, подоконники</a></li>
-								<li><a href="#">Монтажные товары</a></li>
-								<li><a href="#">Комплектующие</a></li>
-								<li><a href="#">Стекло</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_title">Услуги</span>
-							<ul>
-								<li><span class="footer_menu_title">Окна и двери</span></li>
-								<li><a href="#">Изготовление окон и дверей</a></li>
-								<li><a href="#">Установка окон и дверей</a></li>
-								<li><a href="#">Установка откосов и подоконников</a></li>
-								<li><a href="#">Установка сеток</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_title"></span>
-							<ul>
-								<li><span class="footer_menu_title">Перегородки</span></li>
-								<li><a href="#">Изготовление перегородок</a></li>
-								<li><a href="#">Установка перегородок</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_title"></span>
-							<ul>
-								<li><span class="footer_menu_title">Ремонт</span></li>
-								<li><a href="#">Замена стеклопакета</a></li>
-								<li><a href="#">Замена резинок</a></li>
-								<li><a href="#">Регулировка изделий из ПВХ</a></li>
-								<li><a href="#">Перепенка изделий из ПВХ</a></li>
-							</ul>
-						</div>
-						<div class="footer_block">
-							<span class="footer_title">О магазине</span>
-							<ul>
-								<li><a href="#">Оплата и доставка</a></li>
-								<li><a href="#">Информация</a></li>
-								<li><a href="#">Работы</a></li>
-								<li><a href="#">Партнёры</a></li>
-								<li><a href="#">Контакты</a></li>
-							</ul>
-						</div>
+					<div class="section_title">
+						<h2>Наши магазины</h2>
+						<div class="title_line"></div>
+						<a href="#">+ Еще 2 магазина на карте</a>
 					</div>
-					<div class="footer_bottom">
-						<div class="footer_bottom_block bottom_block_1">
-							<span>Главный магазин: ТВЦ “Тамара” ул. Дзержинского 52/2, оф. 19<br>
-							Магазин: Жорницкого 33/1, пав. 107А<br>
-							Склад: ул. Степанова, 12</span>
+					<div class="shop_inner">
+						<div class="shop_block">
+							<div class="shop_content">
+								<div class="shop_title">
+									<img class="margin_right_img" src="img/header_map.png" alt="">
+									<span>Октябрьская, 24</span>
+								</div>
+								<div class="shop_desc">
+									<div class="shop_desc_content">
+										<span>Телефон:</span>
+										<span>+7–924–177–00–00</span>
+									</div>
+									<div class="shop_desc_content">
+										<span>График:</span>
+										<span>Ежедневно <br>10:00 - 19:00</span>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="footer_bottom_block bottom_block_2">
-							<span>+ 7 (4112) 24-16-16<br>
-							+ 7 (4112) 71-33-92<br>
-							+ 7 (4112) 25-61-61</span>
+						<div class="shop_block">
+							<div class="shop_content">
+								<div class="shop_title">
+									<img class="margin_right_img" src="img/header_map.png" alt="">
+									<span>Октябрьская, 24</span>
+								</div>
+								<div class="shop_desc">
+									<div class="shop_desc_content">
+										<span>Телефон:</span>
+										<span>+7–924–177–00–00</span>
+									</div>
+									<div class="shop_desc_content">
+										<span>График:</span>
+										<span>Ежедневно <br>10:00 - 19:00</span>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="footer_bottom_block bottom_block_3">
-							<p>2019 © Окна К. ИП Косолапов В. Н
-	Продажа и установка пластиковых окон и дверей в Якутске</p>
+						<div class="shop_block">
+							<div class="shop_content">
+								<div class="shop_title">
+									<img class="margin_right_img" src="img/header_map.png" alt="">
+									<span>Октябрьская, 24</span>
+								</div>
+								<div class="shop_desc">
+									<div class="shop_desc_content">
+										<span>Телефон:</span>
+										<span>+7–924–177–00–00</span>
+									</div>
+									<div class="shop_desc_content">
+										<span>График:</span>
+										<span>Ежедневно <br>10:00 - 19:00</span>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="footer_mobile">
-						<div class="footer_mobile_content">
-							<span>2019 © Окна К. ИП Косолапов В. Н<br>
-	Продажа и установка пластиковых окон
-	и дверей в Якутске</span>
+						<div class="shop_block">
+							<div class="shop_content shop_more">
+								<div class="shop_more_img">
+									<img src="img/shop_more.png" alt="">
+								</div>
+								<div class="shop_more_desc">
+									Показать все магазины на карте
+								</div>
+								<a href="#"></a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</footer>
+			</section>
+
 		</div>
+		<footer class="footer_wrap">
+			<div class="footer_top">
+				<div class="container footer_top_content">
+					<div class="footer_social">
+						<span>Мы в соцсетях:</span>
+						<div class="footer_social_img">
+							<a href="#"><img src="img/instagram.svg" alt=""></a>
+						</div>
+					</div>
+					<div class="footer_kassa" data-toggle="dropdown_bottom">
+						<img src="img/footer_phone.png" alt=""> +7 (924) 177-00-00 (Октябрьская, 24) <img src="img/footer_bottom_arrow.png" alt="">
+					</div>
+					<div class="dropdown-pane dropdown_footer_phone" id="dropdown_bottom" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+						<ul>
+							<li>+7 (924) 177-00-00 (Октябрьская, 24)</li>
+							<li>+7 (924) 177-00-00 (Октябрьская, 24)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer_inner">
+				<div class="container footer_inner_content">
+					<div class="footer_block">
+						<span class="footer_title">Каталог товаров</span>
+						<ul>
+							<li><a href="#">Оборудование для дома</a></li>
+							<li><a href="#">Портативные радиостанции</a></li>
+							<li><a href="#">Комплекты спутникового интернета</a></li>
+							<li><a href="#">Для авто</a></li>
+							<li><a href="#">Доп. оборудование</a></li>
+							<li><a href="#">Кабеля и переходники</a></li>
+							<li><a href="#">Спутниковое ТВ</a></li>
+						</ul>
+					</div>
+					<div class="footer_block">
+						<span class="footer_title">Услуги</span>
+						<ul>
+							<li><a href="#">Установка</a></li>
+						</ul>
+					</div>
+					<div class="footer_block">
+						<span class="footer_title">О компании</span>
+						<ul>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Магазины</a></li>
+						</ul>
+					</div>
+					<div class="footer_block">
+						<span class="footer_title">Покупателям</span>
+						<ul>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Обмен, возврат и ремонт</a></li>
+							<li><a href="#">Пользовательское соглашение</a></li>
+							<li><a href="#">Политика конфиденциальности</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer_copyright">
+				<div class="container footer_copyright_content">
+					<div class="footer_footer_copyright_top">
+						<div class="footer_map">
+							<a href="#" class="footer_map_text_1"><img src="img/map.png" alt=""> Карта сайта</a>
+						</div>
+						<div class="footer_search">
+							<form class="footer_search_form" action="index.html" method="post">
+								<input type="search" class="footer_search" name="q" placeholder="Поиск на сайте...">
+								<div class="search"></div>
+							</form>
+						</div>
+					</div>
+					<div class="footer_copyright_bottom">
+						<span>© 2019 Мир Антенн</span>
+						<div class="footer_copyright_bottom_block">
+							<span>Дизайн и разработка </span>
+							<a href="http://platforma.bz"><img src="img/platforma.png" alt="Разработка сайтов"></a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="footer_mobile">
+				<div class="footer_mobile_content">
+					<span>2019 © Окна К. ИП Косолапов В. Н<br>Продажа и установка пластиковых окон и дверей в Якутске</span>
+				</div>
+			</div>
+		</footer>
 		<script src="vendor/foundation/js/vendor/jquery.js"></script>
 		<script src="vendor/foundation/js/vendor/what-input.js"></script>
 		<script src="vendor/foundation/js/vendor/foundation.js"></script>
@@ -637,24 +891,46 @@
 			slidesToScroll: 1,
 			centerMode: true,
 			focusOnSelect: true,
-			arrows: false,
+			arrows: true,
 			dots: true,
 			variableWidth: true,
-    variableHeight: true,
+      variableHeight: true,
+			prevArrow: $('#arrow_left_1'),
+			nextArrow: $('#arrow_right_1'),
 			responsive: [
 		    {
 		      breakpoint: 568,
 		      settings: {
 		        slidesToShow: 1,
 		        slidesToScroll: 1,
-				dots: false,
-				arrows: true,
-				prevArrow: $('.arrow_left'),
-				nextArrow: $('.arrow_right'),
+						dots: false,
 		      }
 		    }
 		  ]
-	  	});
+	  });
+		$('.popular_tovar_content').slick({
+			slidesToShow: 6,
+			slidesToScroll: 1,
+			infinite: true,
+			centerMode: false,
+			focusOnSelect: true,
+			arrows: true,
+			dots: false,
+			variableWidth: true,
+      variableHeight: true,
+			prevArrow: $('#arrow_left_2'),
+			nextArrow: $('#arrow_right_2'),
+			responsive: [
+		    {
+		      breakpoint: 568,
+		      settings: {
+		        slidesToShow: 1,
+		        slidesToScroll: 1,
+						dots: false,
+		      }
+		    }
+		  ]
+	  });
 	  jQuery(function($){
 			$("#phone").mask("+7 (999) 999-9999");
 
