@@ -3471,6 +3471,12 @@ input[type=number] {
 	.container {
 		max-width: 568px;
 	}
+	.footer_block ul li ul li a {
+		padding: 16px!important;
+		display: flex;
+		border-bottom: 1px solid #383D46;
+	}
+
 	.header_control {
 		width: 150px;
 	}
