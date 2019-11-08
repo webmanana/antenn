@@ -65,6 +65,8 @@
 									<a href="#" class="header_reg red" data-toggle="header_reg">
 										<span>Регистрация</span>
 									</a>
+									<a href="#" class="burger_mobile" data-toggle="header_mobile">
+									</a>
 								</div>
 								<div class="dropdown-pane header_login_inner" id="header_join" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
 									<div class="header_login_content">
@@ -74,8 +76,73 @@
 											<input type="password" name="" value="" placeholder="Пароль">
 											<input type="submit" name="" value="Войти">
 											<p>Еще нет аккаунта? <a href="#">Зарегистрируйтесь</a></p>
+											<a href="#" data-toggle="header_reg">Регистрация</a>
 										</div>
 									</div>
+								</div>
+								<div class="dropdown-pane header_mobile" id="header_mobile" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
+									<ul class="menu vertical" data-responsive-menu="small-accordion">
+										<li class="has-submenu">
+											<a href="#" class="submenu_title"><img src="img/phone_mobile.png" alt=""> +7 (924) 177-00-00 (Октябрьская, 24)</a>
+											<ul>
+												<li><a href="#">О компании</a></li>
+												<li><a href="#">Вакансии</a></li>
+												<li><a href="#">Контакты</a></li>
+												<li><a href="#">Новости</a></li>
+												<li><a href="#">Магазины</a></li>
+											</ul>
+										</li>
+										<li class="has-submenu">
+											<a href="#" class="submenu_title">Каталог товаров</a>
+											<ul>
+												<li><a href="#">Оборудование для дома</a></li>
+												<li><a href="#">Портативные радиостанции</a></li>
+												<li><a href="#">Комплекты спутникового интернета</a></li>
+												<li><a href="#">Для авто</a></li>
+												<li><a href="#">Дополнительное оборудование</a></li>
+												<li><a href="#">Кабеля и переходники</a></li>
+											</ul>
+										</li>
+										<li class="has-submenu">
+											<a href="#" class="submenu_title">Услуги</a>
+											<ul>
+												<li><a href="#">О компании</a></li>
+												<li><a href="#">Вакансии</a></li>
+												<li><a href="#">Контакты</a></li>
+												<li><a href="#">Новости</a></li>
+												<li><a href="#">Магазины</a></li>
+											</ul>
+										</li>
+										<li class="has-submenu">
+											<a href="#" class="submenu_title">Покупателям</a>
+											<ul>
+												<li><a href="#">О компании</a></li>
+												<li><a href="#">Вакансии</a></li>
+												<li><a href="#">Контакты</a></li>
+												<li><a href="#">Новости</a></li>
+												<li><a href="#">Магазины</a></li>
+											</ul>
+										</li>
+										<li class="has-submenu">
+											<a href="#" class="submenu_title">О компании</a>
+											<ul>
+												<li><a href="#">О компании</a></li>
+												<li><a href="#">Вакансии</a></li>
+												<li><a href="#">Контакты</a></li>
+												<li><a href="#">Новости</a></li>
+												<li><a href="#">Магазины</a></li>
+											</ul>
+										</li>
+										<li>
+											<a href="#" class="submenu_title red"><img src="img/mobile_map.png" alt=""> Карта сайта</a>
+										</li>
+										<li>
+											<form class="search_block" action="">
+												<input class="search_area" type="text" name="q" value="" autocomplete="off" placeholder="Поиск по каталогу">
+												<input type="submit" name="" value="">
+											</form>
+										</li>
+									</ul>
 								</div>
 								<div class="dropdown-pane header_login_inner" id="header_reg" data-dropdown data-auto-focus="true" data-close-on-click="true" data-close-on-click-inside="true">
 									<div class="header_login_content">
@@ -820,6 +887,14 @@
 						dots: false,
 						variableWidth: true,
 			      variableHeight: true,
+						responsive: [
+							{
+								breakpoint: 568,
+								settings: {
+									centerMode: false,
+								}
+							}
+						]
 				  });
 				} else {
 					$('.footer_bottom_menu ul').css( "display", "block" );
