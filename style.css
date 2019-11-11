@@ -515,6 +515,9 @@ a:hover {
 	font-size: 12px;
 	display: none;
 }
+.header_mobile {
+	left: 0!important;
+}
 .header_mobile_menu ul {
 	display: flex;
 	flex-direction: row;
