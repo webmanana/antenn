@@ -8,6 +8,11 @@ $(window).on('load resize', function() {
 			$( ".footer_bottom_menu" ).removeAttr( "data-responsive-menu" );
 		}
 });
+$(function() {
+	$(".add_cart").click(function() {
+		$(this).addClass("added");
+	});
+});
 jQuery(document).ready(function(){
 	$('[data-quantity="plus"]').on("click",function(e){
 				// Stop acting like a button
