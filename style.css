@@ -1916,6 +1916,9 @@ a:hover {
 .news_url {
 	display: none;
 }
+.address_submit {
+	margin-top: 16px;
+}
 .catalog_element_meta_inner {
 	position: absolute;
   right: 18px;
@@ -3704,8 +3707,18 @@ input[type=number] {
 	.filter_sort {
 		padding-right: 47px;
 	}
-	.tovar_meta a span {
-		font-size: 12px;
+	.tovar_cart {
+		flex-direction: column;
+	}
+	.tovar_cart_buy {
+		margin-bottom: 16px;
+		border: 1px solid #C93838;
+	}
+	.tovar_cart_faste {
+		margin-left: 0;
+	}
+	.header_top_text {
+		display: none;
 	}
 }
 @media (max-width: 900px) {
@@ -3795,9 +3808,8 @@ input[type=number] {
 	.tovar_cart_faste {
 		padding: 6px 15px;
 	}
-	.tovar_meta a span {
-		padding-left: 3px;
-		font-size: 10px;
+	.tovar_meta {
+		padding-top: 16px;
 	}
 	.catalog_1_content::after {
 		display: none;
@@ -3981,6 +3993,23 @@ input[type=number] {
 		padding-left: 16px;
 		padding-right: 16px;
 		max-width: 568px;
+	}
+	.tovar_meta {
+		justify-content: space-between;
+	}
+	.add_cart {
+		width: 40px;
+		height: 40px;
+	}
+	.catalog_element_cart {
+		height: 40px;
+	}
+	.catalog_element_price {
+		padding-bottom: 5px;
+	}
+	.catalog_element_meta_inner {
+		right: 10px;
+		top: 10px;
 	}
 	.catalog_element_img {
 		width: 100%;
@@ -4357,8 +4386,7 @@ input[type=number] {
 	}
 	.bottom_header_inner,
 	.footer_bottom,
-	.tovar_brend,
-	.tovar_meta, .logo, .header_top_menu, .section_title .title_line, .section_title a, .service, .banner, .footer_top, .header_cart a span, .header_top_line, .header_log span, .header_log img {
+	.tovar_brend, .logo, .header_top_menu, .section_title .title_line, .section_title a, .service, .banner, .footer_top, .header_cart a span, .header_top_line, .header_log span, .header_log img {
 		display: none;
 	}
 	.header_info {
@@ -4697,6 +4725,27 @@ input[type=number] {
 @media (max-width: 568px) {
 	.slide_big img {
 		max-height: 200px;
+	}
+	.wrap {
+		padding-top: 16px;
+	}
+	.tovar_tabs_title h2 {
+		font-size: 22px;
+		margin-bottom: 16px;
+	}
+	.tovar_price {
+		justify-content: space-between;
+	}
+	.tovar_content_bottom {
+		padding: 16px;
+	}
+	.tovar_tabs .catalog_element_block {
+		width: 100%;
+	}
+	.tovar_tabs .catalog_element_block_inner {
+		flex-direction: column;
+		padding: 0!important;
+		width: 100%!important;
 	}
 	.account_input_block, .account_input_text {
 		padding: 0
