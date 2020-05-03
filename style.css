@@ -477,8 +477,8 @@ a:hover {
 	padding-bottom: 18px;
 }
 
-.header_menu_dropdown_block span {
-	font-size: 18px;
+.header_menu_title {
+	font-size: 22px;
 	display: flex;
 	margin-bottom: 16px;
 	color: #263056;
@@ -488,7 +488,7 @@ a:hover {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	display: flex;
-	color: #c93838;
+	color: #747B97;
 }
 
 .header_top_text {
@@ -1965,27 +1965,10 @@ a:hover {
 
 .catalog_1_content {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 
-.catalog_1_content::after {
-	position: absolute;
-	right: 0;
-	width: 1px;
-	height: 70%;
-	content: '';
-	background-color: #dfe9ef;
-}
-
-.catalog_1_content::before {
-	position: absolute;
-	bottom: 0;
-	width: 95%;
-	height: 1px;
-	content: '';
-	background-color: #dfe9ef;
-}
 
 .catalog_inner_main {
 	display: flex;
@@ -2005,8 +1988,7 @@ a:hover {
 }
 
 .catalog_1_desc {
-	flex: 1;
-	padding-left: 32px;
+
 }
 
 .map_desc a h3 {
@@ -2063,9 +2045,14 @@ a:hover {
 	font-weight: normal;
 	font-style: normal;
 	display: flex;
-	color: #c93838;
+	color: #747B97;
 }
 
+.catalog_1_title {
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 32px;
+}
 .catalog_1_desc ul li a:hover {
 	text-decoration: underline;
 }
@@ -2077,8 +2064,27 @@ a:hover {
 	margin-bottom: 10px;
 	color: #263056;
 }
-
-.catalog_1_desc a:hover h3 {
+.catalog_1_name {
+	padding-left: 32px;
+	display: flex;
+	align-items: center;
+}
+.catalog_1_content::before {
+	position: absolute;
+	bottom: 0;
+	width: 95%;
+	height: 1px;
+	content: '';
+	background-color: #dfe9ef;
+}
+.catalog_1_name h3 {
+	font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 0;
+	margin-top: 0;
+  color: #263056;
+}
+.catalog_1_name:hover h3 {
 	color: #c93838;
 }
 
@@ -3983,7 +3989,7 @@ input[type=number] {
 
 .catalog_1_block {
 	position: relative;
-	width: 50%;
+	width: 33.3333%;
 	margin-bottom: 32px;
 	padding-right: 16px;
 	padding-bottom: 32px;
@@ -4030,10 +4036,6 @@ br {
 .catalog_2_desc {
 	flex: 1;
 	padding-left: 32px;
-}
-
-.catalog_1_block:nth-child(2n) .catalog_1_content::after {
-	display: none;
 }
 
 .page_top_img {
@@ -6229,12 +6231,22 @@ br {
 	.slide_big img {
 		max-height: 200px;
 	}
-
+	.catalog_1_name {
+		padding-left: 0;
+	}
+	.catalog_1_title {
+		padding-bottom: 16px;
+	}
 	.search_form input[type=text] {
 		width: 100%;
 		margin-bottom: 16px;
 	}
-
+	.catalog_inner {
+		padding-top: 0;
+	}
+	.catalog_1_name h3 {
+		margin-top: 32px;
+	}
 	.search_form input[type=submit] {
 		width: 100%;
 		margin: 0;
